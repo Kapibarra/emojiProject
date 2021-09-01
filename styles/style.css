@@ -297,6 +297,10 @@ table {
     margin-right: 1.4rem;
 }
 
+.header__search-items a:hover {
+    color: #e4e9f0;
+}
+
 
 /* ------------------------------------------------------------------------------
 2.Main content
@@ -413,6 +417,10 @@ table {
     border-radius: .8rem;
     cursor: pointer;
     border: none;
+}
+
+.card__footer-features button:hover {
+    background-color: #3a65e3!important
 }
 
 .card__content {
@@ -562,6 +570,10 @@ table {
     margin-right: 3.2rem;
 }
 
+.footer__bottom-logo a:hover {
+    cursor: pointer;
+}
+
 .footer__bottom-logo span {
     font-size: 1.6rem;
     line-height: 147%;
@@ -575,6 +587,10 @@ table {
 
 .footer__bottom-social a {
     margin-right: 2rem;
+}
+
+.footer__bottom-social a:hover {
+    cursor: pointer;
 }
 
 .footer__bottom-social span {
