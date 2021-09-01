@@ -390,3 +390,48 @@ table {
 .footer__information-item+.footer__information-item {
     margin-left: 11.7rem;
 }
+
+.footer__bottom {
+    width: 100%;
+    max-width: 1114px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 0;
+    box-sizing: border-box;
+    border-top: .1rem solid #fff;
+}
+
+.footer__bottom-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__bottom-logo a {
+    margin-right: 3.2rem;
+}
+
+.footer__bottom-logo span {
+    font-size: 1.6rem;
+    line-height: 147%;
+}
+
+.footer__bottom-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__bottom-social a {
+    margin-right: 2rem;
+}
+
+.footer__bottom-social span {
+    flex-shrink: 0;
+    margin-left: 3.2rem;
+    font-size: 3.6rem;
+    line-height: 0;
+    letter-spacing: 0;
+}
