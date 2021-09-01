@@ -811,6 +811,7 @@ table {
     font-size: 5rem;
     margin: 0;
     margin-bottom: 2rem;
+    margin-top: 40px;
     font-weight: bold;
 }
 
@@ -818,14 +819,6 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.post-main__side-ad {
-    width: 100%;
-    max-width: 300px;
-}
-
-.post-main__content {
     border-radius: .5rem;
     box-sizing: border-box;
     box-shadow: 0 2px 4px #9e9e9e;
@@ -833,6 +826,13 @@ table {
     padding: 2rem;
     margin-bottom: 3rem;
 }
+
+.post-main__side-ad {
+    width: 100%;
+    max-width: 300px;
+}
+
+.post-main__content {}
 
 .post-main__content h2 {
     font-size: 3rem;
