@@ -126,6 +126,12 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 /* HTML5 display-role reset for older browsers */
 
@@ -184,7 +190,7 @@ table {
     width: 100%;
     max-width: 1903px;
     background-color: #3d6eff;
-    height: 127px;
+    height: 128px;
 }
 
 .header {
@@ -642,6 +648,9 @@ table {
     }
     .footer__bottom-social span {
         margin-left: 0;
+    }
+    .footer__bottom-logo {
+        margin-bottom: 20px;
     }
     .search__button {
         left: 89%;
