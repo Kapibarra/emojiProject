@@ -618,6 +618,36 @@ table {
     }
 }
 
+@media (max-width: 414px) {
+    .footer__bottom {
+        flex-wrap: wrap;
+    }
+    .header__content-wrapper {
+        max-width: 394px;
+        height: auto;
+    }
+    .header {
+        max-width: 394px;
+    }
+    .main__content-card {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .main__content-card-features {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .footer {
+        display: none;
+    }
+    .footer__bottom-social span {
+        margin-left: 0;
+    }
+    .search__button {
+        left: 89%;
+    }
+}
+
 
 /* POST PAGE */
 
