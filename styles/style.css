@@ -252,6 +252,7 @@ table {
     margin-top: 1.6rem;
     width: 6.9rem;
     font-size: 3rem;
+    color: #3d6eff;
 }
 
 .burger__nav a span {
@@ -381,6 +382,10 @@ table {
 
 .visible {
     display: block;
+}
+
+.visible_nav {
+    display: flex;
 }
 
 
