@@ -602,6 +602,10 @@ table {
     letter-spacing: 0;
 }
 
+.mobile__footer {
+    display: none;
+}
+
 
 /*4.1 Accordion*/
 
@@ -713,6 +717,9 @@ table {
     .header__content-wrapper {
         max-width: 394px;
         height: auto;
+    }
+    .header__search-items {
+        display: none;
     }
     .header {
         max-width: 394px;
