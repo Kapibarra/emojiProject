@@ -6,6 +6,7 @@ MAIN PAGE
   2.  Header
   3.  Main content
   4.  Footer
+  4.1 Accordion
   5.  Media
   5.1 Media post page
 
@@ -480,7 +481,7 @@ table {
 }
 
 
-/* Footer */
+/* 4. Footer */
 
 .footer-wrapper {
     margin-top: auto;
@@ -602,6 +603,66 @@ table {
 }
 
 
+/*4.1 Accordion*/
+
+.accordion {
+    background-color: #3d6eff;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px 0px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+}
+
+.active,
+.accordion:hover {
+    background-color: #3d6eff;
+}
+
+.panel {
+    background-color: #3d6eff;
+    display: none;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.panel ul li {
+    margin: 0;
+    transition: all 250ms ease-out;
+    font-size: 1.8rem;
+}
+
+.panel ul li a {
+    margin: 0;
+    transition: all 250ms ease-out;
+    font-size: 16px !important;
+}
+
+.mobile__split {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: unset;
+}
+
+.accordion:after {
+    content: '\002C5';
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.active:after {
+    content: "\02573";
+    margin-right: 5px;
+}
+
+
 /* 5. Media main page*/
 
 @media (max-width: 768px) {
@@ -642,6 +703,10 @@ table {
 }
 
 @media (max-width: 414px) {
+    .footer-wrapper {
+        padding: 20px;
+        padding-top: 0px;
+    }
     .footer__bottom {
         flex-wrap: wrap;
     }
