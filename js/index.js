@@ -56,3 +56,22 @@ function toggleMenu() {
     burgerNav.classList.add('visible_nav')
     burgerNav.classList.remove('unvisible')
 }
+
+// copy to clipboard
+
+const copyEmoji = document.querySelectorAll('[data-copy]')
+console.log(copyEmoji);
+
+copyEmoji.forEach(e => {
+e.addEventListener('click', () => {
+  navigator.clipboard.writeText(e.getAttribute('data-copy'));
+  const popUp = document.querySelector('.snackbar-container')
+  popUp.classList.add('visible-pop-up')
+  popUp.classList.remove('unvisible')
+  setTimeout(() => {
+    popUp.classList.remove('visible-pop-up')
+    popUp.classList.add('unvisible');
+    
+  }, 1200);
+})
+})
