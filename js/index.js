@@ -15,3 +15,11 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// lang select
+
+const langbtn = document.getElementsByClassName("header__lang-item")
+
+langbtn.addEventListener("click", () => {
+    const landList = document.getElementsByClassName("lang__list")
+})

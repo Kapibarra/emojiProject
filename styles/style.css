@@ -718,11 +718,30 @@ table {
         max-width: 394px;
         height: auto;
     }
+    .header__logo-item {
+        width: 200px;
+        height: 50px;
+    }
+    .header__burger-nav {
+        padding: 5px;
+        width: 34px;
+        height: 34px;
+        border-radius: .8rem;
+        margin-left: 10px;
+        min-width: unset;
+        background: #e4e9f0;
+        color: #fff;
+    }
     .header__search-items {
         display: none;
     }
+    .header-wrapper {
+        height: 80px;
+    }
     .header {
         max-width: 394px;
+        padding: unset;
+        height: 60px
     }
     .main__content-card {
         margin: 0 auto;
