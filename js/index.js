@@ -56,7 +56,15 @@ function toggleMenu() {
     burgerNav.classList.add('visible_nav')
     burgerNav.classList.remove('unvisible')
 }
+// trends btn 
+const trendsBtn = document.querySelector('.trends-btn')
+trendsBtn.addEventListener('click', toggleTrends)
 
+function toggleTrends() {
+  const trends = document.getElementById('trends-widget-1')
+  trends.classList.toggle('visible')
+  console.log(trends);
+}
 // copy to clipboard
 
 const copyEmoji = document.querySelectorAll('[data-copy]')
