@@ -1845,20 +1845,29 @@ COLLECTION PAGE
     [data-copy] {
         cursor: pointer;
         list-style-type: none;
+        line-height: 2.5rem;
         padding: .7rem 2rem;
         border-radius: 8px;
         border: 2px solid #3d6eff;
         transition: all 150ms ease-out;
-        font-size: 1.6rem !important;
         background-color: #fff;
         align-items: center;
         color: #3d6eff;
         width: fit-content;
     }
     
+    [data-copy] span {
+        font-size: 1.6rem;
+    }
+    
     b {
         font-size: 1.6rem;
         font-weight: 700;
+    }
+    
+    td {
+        display: table-cell;
+        vertical-align: inherit;
     }
     
     ol {
