@@ -1521,9 +1521,35 @@ td a:hover {
     margin-bottom: 1.6rem;
 }
 
+.collection-main__content strong {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
 .collection-main__content p a {
     color: #3d6eff;
     text-decoration: none;
     font-size: 1.6rem;
     line-height: 1.5;
+}
+
+.add_collection-btn {
+    width: 100%;
+    max-width: 275px;
+    margin: 0 auto;
+    display: block;
+    line-height: 147%;
+    padding: 1.65rem 2rem;
+    font-size: 1.6rem;
+    transition: all 150ms ease-out;
+    background-color: #3d6eff!important;
+    cursor: pointer;
+    border-radius: .8rem;
+    color: #fff;
+    border-color: unset;
+    border-width: 0;
+}
+
+.add_collection-btn:hover {
+    background-color: #3a65e3!important;
 }
