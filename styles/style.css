@@ -361,8 +361,8 @@ h3 {
 
 .lang__list {
     position: fixed;
-    top: 5%;
-    left: 2%;
+    top: 3%;
+    right: 20.5%;
     width: 86%;
     max-width: 384px;
     max-height: 60vh;
@@ -371,6 +371,13 @@ h3 {
     background-color: #fff;
     z-index: 100;
     opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+    .lang__list {
+        top: 1%;
+        right: 2.5%;
+    }
 }
 
 .lang__list ul li {
@@ -1552,4 +1559,10 @@ td a:hover {
 
 .add_collection-btn:hover {
     background-color: #3a65e3!important;
+}
+
+@media (max-width: 768px) {
+    .collection-main__side-ad {
+        display: none;
+    }
 }
