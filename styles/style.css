@@ -123,6 +123,11 @@ body {
     box-sizing: border-box;
 }
 
+i {
+    font-style: italic;
+    font-size: 1.6rem;
+}
+
 hr {
     border: 0;
     height: 0;
@@ -178,6 +183,14 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+h2 a {
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+    color: #3d6eff;
 }
 
 h3 {
@@ -1718,4 +1731,121 @@ td a:hover {
     .version-main__side-ad {
         display: none;
     }
+}
+
+
+/* search page */
+
+.search__content-wrapper {}
+
+.search__title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.search-page__input {
+    position: relative;
+    outline: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: #000;
+    border-radius: 3rem;
+    border: .1rem solid #ccc;
+    padding: .7rem 5rem .7rem 2rem;
+    font-size: 1.6rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.search-page__input-img {
+    font-size: 24px!important;
+    width: 24.33px!important;
+    height: 24.49px!important;
+    background-color: initial;
+    border: none;
+    position: absolute;
+    top: 34%;
+    right: 22%;
+}
+
+@media (max-width:768px) {
+    .search-page__input-img {
+        top: 21.3%;
+        right: 3%;
+    }
+}
+
+@media (max-width:414px) {
+    .search-page__input-img {
+        top: 14.5%;
+        right: 4%;
+    }
+}
+
+.search-page__input-img img {
+    width: 24px;
+}
+
+.search__content {
+    width: 100%;
+    max-width: 1114px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px
+}
+
+.search__content-item {
+    border-radius: .5rem;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px #9e9e9e;
+    background-color: #fff;
+    padding: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.search__content-item p {
+    margin: 0 0 0 1rem;
+    overflow: hidden;
+    max-height: 5.6rem;
+    line-height: 1.3;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.emoji {
+    font-size: 4.5rem;
+}
+
+
+/*templates*/
+
+.facts {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.facts li {
+    font-size: 1.6em;
+    line-height: 1.5 !important;
+}
+
+.template__emojis-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.template__emojis-item {
+    width: 72px;
+    height: 72px;
+    margin: 0 10px;
 }
