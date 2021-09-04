@@ -181,12 +181,23 @@ COLLECTION PAGE
         border-spacing: 0;
     }
     
+    h1 {
+        padding-left: 5px;
+    }
+    
     h2 a {
         font-size: 3rem;
         margin-top: 4rem;
         margin-bottom: 1.6rem;
         font-weight: bold;
         color: #3d6eff;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 1.6rem;
+        font-weight: bold;
     }
     
     h3 {
@@ -836,6 +847,20 @@ COLLECTION PAGE
             padding-left: 10px;
             padding-right: 10px;
         }
+        .header__burger-nav {
+            display: flex;
+            cursor: pointer;
+            padding: 5px;
+            width: 44px;
+            height: 44px;
+            border-color: unset;
+            border-style: unset;
+            border-radius: .8rem;
+            min-width: unset;
+            margin-left: 10px;
+            background: #e4e9f0;
+            color: #fff;
+        }
     }
     
     @media (max-width: 692px) {
@@ -866,20 +891,6 @@ COLLECTION PAGE
             display: flex;
             margin-right: 20px;
             flex-direction: row;
-        }
-        .header__burger-nav {
-            display: flex;
-            cursor: pointer;
-            padding: 5px;
-            width: 44px;
-            height: 44px;
-            border-color: unset;
-            border-style: unset;
-            border-radius: .8rem;
-            min-width: unset;
-            margin-left: 10px;
-            background: #e4e9f0;
-            color: #fff;
         }
         .header__search-items {
             display: none;
@@ -976,6 +987,12 @@ COLLECTION PAGE
         background-color: #e4e9f0;
     }
     
+    @media (max-width: 768px) {
+        .post-header__second-wrapper {
+            display: none;
+        }
+    }
+    
     .post-header__navigation {
         width: 100%;
         max-width: 1114px;
@@ -1026,7 +1043,8 @@ COLLECTION PAGE
     /* 3. post content*/
     
     .post-main__wrapper {
-        width: 111.4rem;
+        width: 100%;
+        max-width: 111.4rem;
         margin: 0 auto;
     }
     
@@ -1469,25 +1487,11 @@ COLLECTION PAGE
         .post-search__button {
             right: 15%;
         }
-    }
-    
-    @media (max-width: 414px) {
         .post-search {
             display: none;
         }
         .post-search__button {
             display: none;
-        }
-        .post-header__lang {
-            display: flex;
-            flex-direction: row;
-        }
-        .post-header__second-wrapper {
-            display: none;
-        }
-        .expamples-device-card {
-            margin: 0 auto;
-            margin-bottom: 15px;
         }
         .mobile__search-wrapper {
             display: block;
@@ -1516,6 +1520,23 @@ COLLECTION PAGE
             height: 2.449rem!important;
             background-color: initial;
             border: none;
+        }
+        .post-header__lang {
+            display: flex;
+            flex-direction: row;
+        }
+        .header__burger-nav {
+            display: block;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .post-header__second-wrapper {
+            display: none;
+        }
+        .expamples-device-card {
+            margin: 0 auto;
+            margin-bottom: 15px;
         }
     }
     
