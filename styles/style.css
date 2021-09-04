@@ -1761,8 +1761,11 @@ COLLECTION PAGE
         margin-bottom: 1rem;
     }
     
-    .search-page__input {
+    .search-container {
         position: relative;
+    }
+    
+    .search-page__input {
         outline: 0;
         display: block;
         width: 100%;
@@ -1784,22 +1787,8 @@ COLLECTION PAGE
         background-color: initial;
         border: none;
         position: absolute;
-        top: 34%;
-        right: 22%;
-    }
-    
-    @media (max-width:768px) {
-        .search-page__input-img {
-            top: 21.3%;
-            right: 3%;
-        }
-    }
-    
-    @media (max-width:414px) {
-        .search-page__input-img {
-            top: 14.5%;
-            right: 4%;
-        }
+        top: 5%;
+        right: 3%;
     }
     
     .search-page__input-img img {
