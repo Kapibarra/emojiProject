@@ -1961,6 +1961,13 @@ COLLECTION PAGE
         font-weight: 700;
     }
     
+    @media (min-width: 768px) {
+        .modal__content-container {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
     .suggest-form form button {
         display: block;
         width: -webkit-fit-content;
@@ -1978,6 +1985,12 @@ COLLECTION PAGE
         min-width: 7.9rem;
         font-weight: 700;
         min-height: 5.6rem;
+    }
+    
+    .suggest-form__title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 147%;
     }
     
     .button-hover-active,
