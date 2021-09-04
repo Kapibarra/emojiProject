@@ -14,7 +14,6 @@ for (let i = 0; i < acc.length; i++) {
 }
 
 // lang select
-
 const langBtn = document.querySelector('.header__lang-item')
 const overlayWrapper = document.querySelector('.lang__list-wrapper')
 langBtn.addEventListener('click', toggleLang)
