@@ -138,6 +138,10 @@ COLLECTION PAGE
         cursor: pointer;
         text-decoration: none;
     }
+    
+    a {
+        font-size: 1.6rem;
+    }
     /* HTML5 display-role reset for older browsers */
     
     article,
