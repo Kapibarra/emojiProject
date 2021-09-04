@@ -216,7 +216,7 @@
                             <div class="related-emojis-card "><a><span class="emojis-card-item ">🧎‍♀️</span> Woman
                                     Kneeling</a></div>
                         </div>
-                        <button class="add_collection-btn">+Add Emojis to this Collection</button>
+                        <button class="add_collection-btn modal_open">+Add Emojis to this Collection</button>
                     </div>
                     <div class="collection-main__side-ad ">
                         <div class="side-ad"></div>
@@ -380,6 +380,14 @@
         </div>
 
         <!-- Footer ends -->
+        </div>
+        <div class="modal__content-container unvisible">
+            <div class="suggest-form">
+                <div class="suggest-form__title" id="modal_title">Insert text here:</div>
+                <form id="add-emoji"><textarea required="" name="user_input" cols="30" rows="10"></textarea>
+                    <button class="button-hover-active" type="submit">Отправить</button>
+                    <input name="block" id="block" type="hidden" value="home_idea"></form>
+            </div>
         </div>
         <script src="js/index.js "></script>
 </body>
