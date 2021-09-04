@@ -110,7 +110,6 @@ COLLECTION PAGE
         border: 0;
         font-size: 100%;
         font: inherit;
-        vertical-align: baseline;
         font-family: Arial;
         font-size: 10px;
     }
@@ -1883,6 +1882,11 @@ COLLECTION PAGE
         box-sizing: border-box;
     }
     
+    .edata td div {
+        display: flex;
+        align-items: center;
+    }
+    
     [data-copy] {
         cursor: pointer;
         list-style-type: none;
@@ -1895,6 +1899,7 @@ COLLECTION PAGE
         align-items: center;
         color: #3d6eff;
         width: fit-content;
+        font-size: 1.6rem;
     }
     
     [data-copy] span {
