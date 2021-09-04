@@ -32,13 +32,15 @@ function closeLangDropDown() {
     const overlayWrapper = document.querySelector('.lang__list-wrapper')
     const langList = document.querySelector('.lang__list')
     const burgerNav = document.querySelector('.burger__nav')
+    const modalWindow = document.querySelector('.modal__content-container')
     overlayWrapper.classList.add('unvisible')
     overlayWrapper.classList.remove('visible')
     langList.classList.add('unvisible')
     langList.classList.remove('visible') 
     burgerNav.classList.remove('visible_nav')
     burgerNav.classList.add('unvisible')
-
+    modalWindow.classList.remove('visible')
+    modalWindow.classList.add('unvisible')
 }
 
 // Burger button 
@@ -75,11 +77,29 @@ e.addEventListener('click', () => {
 })
 })
 // trends btn 
-const trendsBtn = document.querySelector('.trends-btn')
-trendsBtn.addEventListener('click', toggleTrends)
-
-function toggleTrends() {
-  const trends = document.getElementById('trends-widget-1')
-  trends.classList.toggle('visible')
-  console.log(trends);
+if (document.getElementById('trends')) {
+  const trendsBtn = document.querySelector('.trends-btn')
+  trendsBtn.addEventListener('click', toggleTrends)
+  
+  function toggleTrends() {
+    const trends = document.getElementById('trends-widget-1')
+    trends.classList.toggle('visible')
+    console.log(trends);
+  }
 }
+
+
+// modal window 
+
+const modalOpenBtn = document.querySelectorAll('.modal_open')
+
+modalOpenBtn.forEach(e => {
+  e.addEventListener('click', () => {
+    const modalWindow = document.querySelector('.modal__content-container')
+    const overlayWrapper = document.querySelector('.lang__list-wrapper')
+    overlayWrapper.classList.add('visible')
+    overlayWrapper.classList.remove('unvisible')
+    modalWindow.classList.add('visible')
+    modalWindow.classList.remove('unvisible')
+  })
+})

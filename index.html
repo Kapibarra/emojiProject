@@ -796,8 +796,8 @@
                 <span>We work hard to bring you new features!</span>
                 <span>Want to help?</span>
                 <div class="card__footer-features">
-                    <button>+Idea</button>
-                    <button>+Feedback</button>
+                    <button class="modal_open" data-modal>+Idea</button>
+                    <button class="modal_open">+Feedback</button>
                 </div>
             </div>
         </section>
@@ -936,6 +936,14 @@
         </div>
 
         <!-- Footer ends -->
+    </div>
+    <div class="modal__content-container unvisible">
+        <div class="suggest-form">
+            <div class="suggest-form__title" id="modal_title">Insert text here:</div>
+            <form id="add-emoji"><textarea required="" name="user_input" cols="30" rows="10"></textarea>
+                <button class="button-hover-active" type="submit">Отправить</button>
+                <input name="block" id="block" type="hidden" value="home_idea"></form>
+        </div>
     </div>
     <script src="js/index.js"></script>
 </body>

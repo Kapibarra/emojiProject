@@ -1944,3 +1944,44 @@ COLLECTION PAGE
         font-size: 1.6rem;
         font-weight: 700;
     }
+    
+    .modal__content-container {
+        position: fixed;
+        width: 100%;
+        max-width: 304px;
+        top: 30%;
+        left: 9%;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1.3rem 2rem 2rem;
+        margin: 0;
+        background-color: #fff;
+        border-radius: .8rem;
+        line-height: 147%;
+        font-weight: 700;
+    }
+    
+    .suggest-form form button {
+        display: block;
+        width: -webkit-fit-content;
+        width: fit-content;
+        margin: 0 auto;
+        color: #fff;
+        padding: 0 1.6rem;
+        border: none;
+        outline: 0;
+        border-radius: .8rem;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.6rem;
+        line-height: 147%;
+        min-width: 7.9rem;
+        font-weight: 700;
+        min-height: 5.6rem;
+    }
+    
+    .button-hover-active,
+    [data-suggest] {
+        transition: all 150ms ease-out;
+        background-color: #3d6eff!important;
+    }
